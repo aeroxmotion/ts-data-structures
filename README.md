@@ -8,3 +8,9 @@ Some data structures implemented in TypeScript
 - [ ] Doubly linked list (implemented - missing tests)
 - [ ] Stack
 - [ ] Queue
+
+## Running tests
+
+```bash
+$ npx ts-node **/*.test.ts
+```
