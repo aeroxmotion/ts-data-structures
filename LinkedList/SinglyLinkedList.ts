@@ -30,9 +30,8 @@ export class SinglyLinkedList<T> {
   }
 
   // Traversal
-  [Symbol.iterator] = function* () {
-    const i = this as SinglyLinkedList<T>
-    let node = i.head
+  [Symbol.iterator] = function* (this: SinglyLinkedList<T>) {
+    let node = this.head
 
     while (node) {
       yield node.value

@@ -16,6 +16,6 @@ for (const value of singlyLinkedList) {
   console.assert(value === --count, `Count should be: ${count} instead we got ${value}`)
 }
 
-console.assert(singlyLinkedList.shift() === 2, 'Last value should be 2')
-console.assert(singlyLinkedList.shift() === 1, 'Last value should be 1')
-console.assert(singlyLinkedList.isEmpty, 'List should be empty after shifting')
+console.assert(singlyLinkedList.shift() === 2, 'First value should be `2` after shifting for the first time')
+console.assert(singlyLinkedList.shift() === 1, 'First value should be `1` after shifting for the second time')
+console.assert(singlyLinkedList.isEmpty, 'List should be empty after shifting twice')

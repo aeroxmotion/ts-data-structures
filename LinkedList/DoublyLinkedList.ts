@@ -92,9 +92,8 @@ export class DoublyLinkedList<T> {
   }
 
   // Traversal
-  [Symbol.iterator] = function* () {
-    const i = this as DoublyLinkedList<T>
-    let node = i.head
+  [Symbol.iterator] = function* (this: DoublyLinkedList<T>) {
+    let node = this.head
 
     while (node) {
       yield node.value
