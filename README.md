@@ -5,7 +5,7 @@ Some data structures implemented in TypeScript
 ## ADT Implemented
 
 - [x] Singly linked list
-- [ ] Doubly linked list (implemented - missing tests)
+- [x] Doubly linked list
 - [ ] Stack
 - [ ] Queue
 
